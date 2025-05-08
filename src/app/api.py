@@ -9,7 +9,7 @@ import os
 import pickle
 
 colunas = ['tamanho', 'ano', 'garagem']
-modelo = pickle.load(open('../../models/modelo.sav','rb'))
+modelo = pickle.load(open('models/modelo.sav','rb'))
 
 app = Flask('my_app')
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
